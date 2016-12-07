@@ -6,4 +6,4 @@ The prototype styling depends on SemanticUI. This can be installed by installing
     $ npm install
     $ cd semantic && gulp build
 
-The all the prototype functionality will work without the styling, but the prototype relies on HTML5 canvas for its animations, which requires that your browser supports the HTML5 canvas.
+All the prototype functionality will work without the syling, but the prototype relies on HTML5 canvas for its animations, which requires that your browser supports the HTML5 canvas.
