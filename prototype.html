@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSE435 PEDAC1 Simulation</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+</head>
+  <script src="semantic/dist/semantic.min.js"></script>
+<script src="Prototype.js"></script>
+<div class="grid container">
+  <div class="ui container padded segment">
+    <h2 class="ui medium header">PEDAC1 Simulation</h2>
+    <canvas id="sbCanvas" class="column"></canvas>
+  </div>
+  <div class="ui raised form container horizontal segments">
+    <div class="ui segment">
+      <div class="field">
+        <label>Car X position (m):</label>
+        <input type="text" id="carX" value="0" size=5 />
+      </div>
+      <div class="field">
+        <label>Car Y position (m):</label>
+        <input type="text" id="carY" value="0" size=5 />
+      </div>
+      <div class="field">
+        <label>Car Steady State Speed (kph):</label>
+        <input type="text" id="carVel" value="50" size=5 />
+      </div>
+    </div>
+    <div class="ui segment">
+      <div class="field">
+        <label>Person X position (m):</label>
+        <input type="text" id="personX" value="35" size=5 />
+      </div>
+      <div class="field">
+        <label>Person Y position (m):</label>
+        <input type="text" id="personY" value="-7" size=5 />
+      </div>
+      <div class="field">
+        <label>Person Starting Velocity (kph):</label>
+        <input type="text" id="personVel" value="6" size=5 />
+      </div>
+    </div>
+    <div class="ui form segment">
+      <label>Scenario controls: </label>
+      <div class="ui segment">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="none" value="No Scenario" checked="checked" />
+              <label>No Scenario</label>
+            </div>
+          </div>
+        <div class="inline fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario1" value="Scenario 1" />
+              <label>1</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario2" value="Scenario 2" />
+              <label>2</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario3" value="Scenario 3" />
+              <label>3</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario4" value="Scenario 4" />
+              <label>4</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario5" value="Scenario 5" />
+              <label>5</label>
+            </div>
+          </div>
+        </div>
+        <div class="inline fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario6" value="Scenario 6" />
+              <label>6</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario7" value="Scenario 7" />
+              <label>7</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario8" value="Scenario 8" />
+              <label>8</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario9" value="Scenario 9" />
+              <label>9</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="scenarios" id="scenario10" value="Scenario 10" />
+              <label>10</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field ui checkbox">
+        <input type="checkbox" id="failMode" />
+        <label>Fail Safe Operational Mode </label>
+      </div>
+    </div>
+    <div class="ui segment">
+      <label>Simulation Dashboard: </label>
+      <div class="ui segment">
+        <div>Simulation time: <label id="time">0 seconds</label></div>
+        <div>Current Car Velocity: <label id="carSpeed">0</label> m/s</div>
+        <div>Current Throttle State: <label id="throttleState">Stopped</label></div>
+        <div>
+          <label id="lengthOfSimulation"><b>The length of the simulation is 100 meters</b></label>
+        </div>
+        <div>
+          <label id="heightOfSimulation"><b>The height of the simulation is 20 meters</b></label>
+        </div>
+      </div>
+      <input class="ui primary button" type="button" id="startButton" value="Start!" onclick="start()" />
+    </div>
+  </div>
+
+</div>
+</html>

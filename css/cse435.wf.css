@@ -1,0 +1,123 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Lato, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  float: left;
+}
+
+.nav-bar {
+  background-color: #393c3d;
+  font-family: Lato, sans-serif;
+}
+
+.nav-bar-link {
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  color: #f5f5f5;
+}
+
+.main-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #b8b8b8;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 #d1d1d1;
+}
+
+.team-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.member-card {
+  margin: 3px;
+  -webkit-box-flex: 15%;
+  -webkit-flex: 15%;
+  -ms-flex: 15%;
+  flex: 15%;
+}
+
+.card-title {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.card {
+  display: block;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 #d3d3d3;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.footer {
+  background-color: #393c3d;
+}
+
+.footer-text {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+
+.card-email {
+  display: block;
+  margin: 0px auto;
+  font-weight: 300;
+  text-align: center;
+}
